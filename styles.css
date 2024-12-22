@@ -73,12 +73,12 @@ body {
 
 /* Hero Section */
 .hero-section {
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 3rem 2rem;
     background: linear-gradient(90deg, #282828, #525151);
     color: #fff;
+    display: flex;
 }
 
 .hero-content {

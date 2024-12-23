@@ -24,11 +24,29 @@ body {
 .logo .highlight {
     color: #ffdd40;
 }
-.navbar {
+/* .navbar {
     background: #1a1a2e;
     padding: 1rem 2rem;
     width: 95.6%;
     position: relative; /* Adjusted from absolute to relative */
+
+
+/* .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    z-index: 1000;
+} */ 
+ /* Navbar */
+.navbar {
+    background: #1a1a2e;
+    padding: 1rem 2rem;
+    width: 95.7%; /* Ensure the navbar spans the entire width */
+    position: sticky; /* Make it sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 .navbar .container {
@@ -36,6 +54,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 
 .nav-links {
     list-style: none;
@@ -73,12 +92,12 @@ body {
 
 /* Hero Section */
 .hero-section {
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 3rem 2rem;
     background: linear-gradient(90deg, #282828, #525151);
     color: #fff;
-    display: flex;
 }
 
 .hero-content {
